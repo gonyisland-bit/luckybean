@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180"><defs>
+<pattern id="stripeW" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="3" fill="#FFFFFF" opacity="0.55"/></pattern>
+<pattern id="stripeV" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="4" height="10" fill="#FFFFFF" opacity="0.5"/></pattern>
+<pattern id="scallopW" width="12" height="9" patternUnits="userSpaceOnUse"><path d="M0 9 a6 6 0 0 1 12 0" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity="0.7"/></pattern>
+<pattern id="dotsW" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.3" fill="#FFFFFF" opacity="0.6"/></pattern>
+<pattern id="check" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#DCE6E5"/><rect width="28" height="9" fill="#A9CCCB" opacity="0.55"/><rect width="9" height="28" fill="#A9CCCB" opacity="0.55"/></pattern>
+<pattern id="tentStripe" width="40" height="40" patternUnits="userSpaceOnUse"><rect width="40" height="40" fill="#F5EEE2"/><rect width="20" height="40" fill="#F2A48C"/></pattern>
+<pattern id="wallpaper" width="24" height="24" patternUnits="userSpaceOnUse"><rect width="24" height="24" fill="#CFE3E3"/><path d="M12 5 l3 5 -3 5 -3 -5 z" fill="#A9CCCB" opacity="0.7"/></pattern>
+<pattern id="planksF" width="60" height="16" patternUnits="userSpaceOnUse"><rect width="60" height="16" fill="#D9BE98"/><rect y="15" width="60" height="1.2" fill="#C4A57C"/><rect x="40" width="1.2" height="16" fill="#C4A57C"/></pattern>
+<pattern id="kraftLines" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#C9A06A"/><rect y="4" width="10" height="0.8" fill="#B08850" opacity="0.4"/></pattern>
+<filter id="hand" x="-2%" y="-2%" width="104%" height="104%"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="4" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="1.6" xChannelSelector="R" yChannelSelector="G"/></filter>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0.3  0 0 0 0 0.3  0 0 0 0 0.3  0 0 0 0.5 -0.2"/></filter>
+<radialGradient id="glow"><stop offset="0" stop-color="#FFE7A8" stop-opacity="0.75"/><stop offset="1" stop-color="#FFE7A8" stop-opacity="0"/></radialGradient>
+</defs><g transform="translate(90 150) scale(2.8 2.8)">
+<path d="M-13 -14 C-22 -16 -24 -28 -18 -32 C-16 -33 -15 -31 -16 -30" stroke="#E8913A" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+<path d="M-8 -10 L-12 0 M9 -10 L6 0" stroke="#C9722A" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M-6 -10 L-3 0 M11 -10 L14 0" stroke="#E8913A" stroke-width="3.6" stroke-linecap="round"/>
+<ellipse cx="0" cy="-13" rx="14" ry="6.4" fill="#E8913A"/>
+<path d="M-6 -18.6 q1.2 3 0 5.6 M-1 -19.2 q1.2 3 0 5.6 M4 -18.8 q1.2 3 0 5.4" stroke="#C9722A" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+<path d="M11 -24 L12 -31.5 L16 -25.5 Z M16.5 -25 L19.5 -30.5 L20.5 -23 Z" fill="#E8913A"/>
+<circle cx="15.5" cy="-19.5" r="6.2" fill="#E8913A"/>
+<ellipse cx="19.6" cy="-17.6" rx="2.6" ry="1.9" fill="#F7E7D0"/>
+<circle cx="17.4" cy="-20.6" r="0.7" fill="#3B3B3D"/>
+<path d="M21.6 -18.6 l0.9 0.6 -0.9 0.6 z" fill="#3B3B3D"/>
+</g></svg>

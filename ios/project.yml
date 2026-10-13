@@ -1,0 +1,56 @@
+name: LuckyBean
+options:
+  bundleIdPrefix: studio.devgon
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: ""   # 맥 첫날 채울 것
+targets:
+  LuckyBean:
+    type: application
+    platform: iOS
+    sources:
+      - path: LuckyBean
+        excludes: ["**/*.md"]
+    info:
+      path: LuckyBean/Info.plist
+      properties:
+        CFBundleDisplayName: 럭키빈
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIAppFonts: [Jua-Regular.ttf, GowunDodum-Regular.ttf, ZenMaruGothic-Regular.ttf, ZenMaruGothic-Bold.ttf]
+        UIBackgroundModes: [audio, remote-notification]
+        NSLocationWhenInUseUsageDescription: 게임이 끝난 뒤 가까운 카페를 찾아 드릴게요.
+        CFBundleLocalizations: [ko, ja, en]
+        CFBundleDevelopmentRegion: ko
+    entitlements:
+      path: LuckyBean/LuckyBean.entitlements
+      properties:
+        com.apple.developer.icloud-container-identifiers: [iCloud.studio.devgon.luckybean]
+        com.apple.developer.icloud-services: [CloudKit]
+        aps-environment: development
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: studio.devgon.luckybean
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+  LuckyBeanTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [LuckyBeanTests]
+    dependencies:
+      - target: LuckyBean
+schemes:
+  LuckyBean:
+    build:
+      targets:
+        LuckyBean: all
+        LuckyBeanTests: [test]
+    test:
+      targets: [LuckyBeanTests]
